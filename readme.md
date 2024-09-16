@@ -12,6 +12,8 @@ This microservice listens for messages from RabbitMQ to automatically deploy use
 ## installation
 `npm install`
 
+don't forget to adjust the .env to fit your project need
+
 ## Running
 `npm run dev`
 
