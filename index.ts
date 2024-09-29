@@ -124,7 +124,7 @@ async function processMessage(msg: amqp.ConsumeMessage | null) {
         console.log(`Project ${projectId} published successfully`);
     } catch (error) {
         console.error(`Error processing project ${projectId}:`, error);
-        project.status = 'failed';
+        project.status = 'DECLINED';
         await project.save();
     } finally {
         // Clean up
